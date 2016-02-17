@@ -1,0 +1,22 @@
+Note how large each div currently is by measuring them on the ruler
+
+Set the "box-sizing" property to "border-box" on each div. How does this change the size of the divs? The divs get smaller, down to 310
+
+Float both divs right, what happens? first the divs were on top of each other in a column at 310, now they are next to each other from 570 to 1200
+
+Float both divs left, what happens? the divs are now side by side but moved to the left of the page from 0 to 640
+
+Resize your browser window such that it is less than 600 pixels wide (use the ruler to measure). What happens? Set your browser window back to the full width of your screen when done. the page doesn't resize itself, you still see the same size of divs, but they are cutt off and you have to scroll to see the rest of the page
+
+Float testDiv1 right and testDiv2 left. What happens? Div2 is to the left from  to 310 and testDiv2 is right from 900 to 1200
+
+Float both divs to the left or to the right and set the size of testDiv1 to 2000px. What happens? so the divs are on the right side of the page and div2 is on the right side from 580 to 870; div1 is towards the right from 900 to 1200
+
+So far, we have been creating fixed layouts by setting the width of our columns in pixels. The advantage of a fixed layout is that elements look consistent, no matter the size of the display. The disadvantage of fixed layouts is that they may overflow a small display. Fluid layouts set widths as percentage values so that the layout will resize as the browser window resizes. Try a fluid layout now. Set both divs to a width of 35%, and set the container to a width of 100%.
+What happens if you resize your browser window after setting the divs to the percentage setting in the previous step? now if you resize browser window the divs also resize in percentage to match the browser window size
+
+In the html source code for this page, copy testDiv1 and paste the copy below testDiv2. Change the id for this new div to testDiv3. Add a #testDiv3 section to the style rules. Now you have three columns to play with.
+
+Try to make a three column display with all three columns equally sized.
+
+Try to make a three column display with the far left column about 25% of the page width, and the other two splitting the remaining 75%. Try this as both a fixed and a fluid layout. 
